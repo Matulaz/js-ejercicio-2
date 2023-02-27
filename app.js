@@ -71,13 +71,43 @@ console.log("hola mundo!")
 
 
 // 9)Crea una función llamada sumar(a,b) y nos devuelva la suma de a y b
-
-
+// function sumar(a,b){
+//     return a+b
+// }
+// console.log(sumar(10,15))
 
 
 
 // 10)Crea una función llamada restar(a,b) y nos devuelva la resta de a y b
+//Probamos una arrow function
+//syntax
+//()=>expression ANONIMA
+//declaro_variable = (parametros) => {cuerpo_de_la_funcion}
+
+// let restar = (a,b) => {return a-b}
+// console.log(restar(10,5))
+
+
+
 // 11)Crea una función llamada calcular(operación,a,b) y dependiendo de si la operación es “+” o “-” invocar la función sumar(a,b) o restar(a,b) (retornar el resultado), en caso de recibir una operación no válida devolver null 
+
+let calcular = (operacion,a,b) => {
+    switch(operacion){
+        case '+':
+        return a+b;
+        break;
+        case '-': 
+        return a-b;
+        break;
+        default: 
+        return null;
+    }
+}
+
+console.log(calcular('*',10,3))
+
+
+
 // 12)Crea una función llamada contarHasta(número) y nos cuente hasta ese número por consola
 // 13)Pregúntale al usuario si desea usar la calculadora, mientras su respuesta sea “SI” ejecutaras el siguiente algoritmo. Solícita al usuario un número, otro número y una operación, luego con los valores ingresados ejecuta la función calcular para mostrar el resultado por alerta. Una vez hecho esto se volverá a preguntar al usuario si quiere volver a usar la calculadora. Si escribe algo distinto de sí, el programa nos dirá por alerta “El programa ha finalizado”.
 // 14)hacer  un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44–55-66…..no shacer  un programa que permita cargar 5 números enteros y luego nos informe cuántos valores fueron pares y cuántos impares.e ingresan valores por teclado.
