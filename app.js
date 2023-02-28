@@ -91,27 +91,94 @@ console.log("hola mundo!")
 
 // 11)Crea una función llamada calcular(operación,a,b) y dependiendo de si la operación es “+” o “-” invocar la función sumar(a,b) o restar(a,b) (retornar el resultado), en caso de recibir una operación no válida devolver null 
 
-let calcular = (operacion,a,b) => {
-    switch(operacion){
-        case '+':
-        return a+b;
-        break;
-        case '-': 
-        return a-b;
-        break;
-        default: 
-        return null;
-    }
-}
+// let calcular = (operacion,a,b) => {
+//     switch(operacion){
+//         case '+':
+//         return a+b;
+//         break;
+//         case '-': 
+//         return a-b;
+//         break;
+//         default: 
+//         return null;
+//     }
+// }
 
-console.log(calcular('*',10,3))
+// console.log(calcular('*',10,3))
 
 
 
 // 12)Crea una función llamada contarHasta(número) y nos cuente hasta ese número por consola
+
+// function contarHasta(numero){
+//     for(var i = 1; i <= numero; i++){
+//         console.log(i)
+//     }
+
+// }
+
+// contarHasta(10)
+
+
+
 // 13)Pregúntale al usuario si desea usar la calculadora, mientras su respuesta sea “SI” ejecutaras el siguiente algoritmo. Solícita al usuario un número, otro número y una operación, luego con los valores ingresados ejecuta la función calcular para mostrar el resultado por alerta. Una vez hecho esto se volverá a preguntar al usuario si quiere volver a usar la calculadora. Si escribe algo distinto de sí, el programa nos dirá por alerta “El programa ha finalizado”.
-// 14)hacer  un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44–55-66…..no shacer  un programa que permita cargar 5 números enteros y luego nos informe cuántos valores fueron pares y cuántos impares.e ingresan valores por teclado.
-// 15)
+
+
+
+//NO RESUELTO!!!!
+// function calculadora(){
+
+//     let consulta = prompt('Necesitas usar calculadora? \nResponda: SI - NO');
+
+//     if (consulta == 'SI'){
+//             let num1 = parseInt(prompt("Ingrese el Primer numero"));
+//             let num2 = parseInt(prompt("Ingrese el segundo numero"));
+//             let operacion = prompt("Ingrese la operacion que desea realizar");
+
+//             console.log(num1, operacion, num2)
+
+//             calculadora();
+//     }else{
+//         console.log("El programa ha finalizado")
+//     }
+
+// }
+
+// calculadora();
+
+
+
+
+// 14)hacer  un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44–55-66…..
+
+// for (var i = 1; i <= 25; i++){
+
+//         let j = 11
+//         let resultado = j*i
+//         console.log(resultado)
+
+// }
+
+
+// 15)hacer  un programa que permita cargar 5 números enteros y luego nos informe cuántos valores fueron pares y cuántos impares ingresan valores por teclado
+
+// let sumaPar = 0
+// let sumaImpar = 0
+
+// for(var i = 1; i<=5; i++){
+//     let num = prompt("Porfavor, ingresa un numero")
+
+//             if (num%2 == 0){
+//                 sumaPar++
+//             }else{
+//                 sumaImpar++
+//             }
+
+// }
+
+// console.log(`Ingresaste ${sumaPar} numeros PAR y ${sumaImpar} numeros IMPAR`)
+
+
 // 16)hacer un programa donde se ingresan un conjunto de 5 alturas de personas por teclado. Mostrar la altura promedio de las personas. 
 // 17)Se cuenta con la siguiente información:
 // 	Las edades de 5 estudiantes del turno mañana.
